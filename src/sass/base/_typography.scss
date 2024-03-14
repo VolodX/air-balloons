@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100,300,regular,700,900&display=swap);
+
+body {
+  font-family: Lato, sans-serif;
+  // font-family: Roboto;
+  font-weight: 400;
+  font-size: $font-size-p;
+  color: #777;
+  letter-spacing: 0.2rem;
+}
+
+.title-first {
+  color: $color-white;
+  &__main {
+    text-transform: uppercase;
+    display: block;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1rem;
+    margin-bottom: 1rem;
+    animation: leftToRight 1.7s ease 0.3s backwards;
+    backface-visibility: hidden;
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.5rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+
+  &__secondary {
+    display: block;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.5rem;
+    animation: rightToLeft 1.7s ease 0.3s backwards;
+    backface-visibility: hidden;
+    margin-bottom: 5rem;
+    @include respond(tab-land) {
+      font-size: 3.5rem;
+      margin-bottom: 3.5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.2rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+}
+
+.title-secondary {
+  display: inline-block;
+  text-align: center;
+  font-size: $font-size-h2;
+  letter-spacing: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #ba8554b3 3.65%, #a14f03 99.94%);
+
+  background-clip: text;
+  color: transparent;
+  transition: all 0.4s;
+  backface-visibility: hidden;
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: $text-shadow;
+  }
+  &_white {
+    color: white;
+  }
+  @include respond(tab-land) {
+    font-size: 3rem;
+  }
+  @include respond(tab-port) {
+    // font-size: 2.4rem;
+  }
+}
+
+.title-third {
+  font-size: $font-size-h3;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  @include respond(tab-port) {
+    font-size: 1.5rem;
+  }
+}
+
+.paragraph {
+  font-size: $font-size-p;
+  letter-spacing: 0.2rem;
+  @include respond(tab-land) {
+    font-size: 1.5rem;
+  }
+}
+
+.paragraph-about {
+  line-height: 140%; /* 2.24rem */
+}
+.tour-title {
+  // animation: line-text 10s linear 0s infinite;
+}
+
+@include respond(tab-port) {
+}

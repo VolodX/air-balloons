@@ -1,0 +1,186 @@
+.card-tour {
+  position: relative;
+  height: 50rem;
+  perspective: 150rem;
+
+  &:hover &__side_front {
+    transform: rotateY(-180deg);
+    @include respond(tab-port) {
+      transform: rotateY(0deg);
+    }
+  }
+  &:hover &__side_back {
+    transform: rotateY(0deg);
+  }
+
+  @media only screen and (max-width: 900px), (hover: none) {
+    height: auto;
+  }
+  &__img {
+    height: 24.5rem;
+    background-blend-mode: hard-light;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
+    margin-bottom: 4rem;
+    @media only screen and (max-width: 900px), (hover: none) {
+      height: 30rem;
+    }
+  }
+  &__img_1 {
+    background: $color-brown-light url(../../src/img/tour/tour-1.jpg) center/cover no-repeat;
+  }
+  &__img_2 {
+    background: $color-brown-light url(../../src/img/tour/tour-2.jpg) center/cover no-repeat;
+  }
+  &__img_3 {
+    background: $color-brown-light url(../../src/img/tour/tour-3.jpg) center/cover no-repeat;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 2.8rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    top: 18.7rem;
+    right: 0;
+    @include respond(tab-port) {
+      top: 27rem;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__descr {
+    ul {
+      text-align: center;
+      margin: 0 auto;
+      width: 75%;
+      // padding-top: 4rem;
+      li {
+        display: inline-block;
+        color: $color-gray;
+        font-size: $font-size-p;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.2rem;
+        // text-decoration-line: underline;
+        border-bottom: 1px solid $color-gray;
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+
+        @include respond(tab-land) {
+          border-bottom: none;
+          text-decoration-line: underline;
+          font-size: 1.5rem;
+        }
+        @include respond(tab-port) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  &__span {
+    background: $color-gardient-brown-light;
+    // padding: 1rem 2rem 0.3rem 2rem;
+    &_1 {
+      padding: 1rem 1.6rem 0.2rem 1.6rem;
+    }
+
+    &_2 {
+      position: absolute;
+      top: 3.1rem;
+      right: 0;
+      padding: 0.4rem 1.4rem 1rem 1rem;
+    }
+  }
+
+  &__side {
+    height: 100%;
+    width: 100%;
+    transition: all 1s ease 0s;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 0.3rem;
+    box-shadow: $box-shadow-light;
+    overflow: hidden; // NN
+
+    @media only screen and (max-width: 900px), (hover: none) {
+      height: auto;
+      position: relative;
+    }
+    &_front {
+      background: #fff;
+      @media only screen and (max-width: 900px), (hover: none) {
+        padding-bottom: 13rem;
+      }
+      &_front {
+        background: #fff;
+        height: calc(100% - 13rem); // Ви можете спробувати зменшити це значення
+        @include respond(tab-port) {
+          padding-bottom: 13rem;
+        }
+      }
+    }
+
+    &_back {
+      transform: rotateY(180deg);
+      background: linear-gradient(157deg, $color-brown-light 3.65%, $color-brown-dark 100%);
+      box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      @media only screen and (max-width: 900px), (hover: none) {
+        transform: rotateY(0deg);
+        padding: 5rem;
+        padding-top: 12rem;
+        margin-top: -11rem;
+        clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+      }
+    }
+  }
+
+  &__content-back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    @media only screen and (max-width: 900px), (hover: none) {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0%, -0%);
+    }
+  }
+
+  &__title-back {
+    margin-bottom: 8.7rem;
+    color: #fff;
+    font-size: $font-size-p;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+  }
+
+  &__price {
+    margin-bottom: 8.7rem;
+    color: #fff;
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+  }
+
+  &__btn {
+    // width: 100%;
+    // padding: 1.5rem 2.1rem;
+    font-size: 1rem;
+  }
+}
+
+// @include respond(tab-port) {
+//   .mb-80px {
+//     margin-bottom: 0;
+//   }
+// }

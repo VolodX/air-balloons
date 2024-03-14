@@ -1,0 +1,71 @@
+.section-about {
+  padding-top: 8rem;
+  padding-bottom: 20rem;
+}
+
+.section-adventure {
+  padding: 21.5rem 0;
+  background: linear-gradient(91deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%),
+    url(../../src/img/adventure/adventure-bg.jpg) center/cover no-repeat;
+  transform: skewY(7deg);
+  & > * {
+    transform: skewY(-7deg);
+  }
+
+  @media (min-width: 1440px) {
+    background: linear-gradient(91deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%),
+      url(../../src/img/adventure/adventure-bg-lg.jpg) center/cover no-repeat;
+  }
+  @media (min-width: 901px) and (max-width: 991.98px) {
+    background: linear-gradient(91deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%),
+      url(../../src/img/adventure/adventure-bg-md.jpg) center/cover no-repeat;
+  }
+  @media (max-width: 767.98px) {
+    background: linear-gradient(91deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%),
+      url(../../src/img/adventure/adventure-bg-xs.jpg) center/cover no-repeat;
+  }
+}
+
+.section-tour {
+  padding-top: 21rem;
+  // overflow-x: hidden;
+  margin-bottom: 8.5rem;
+}
+
+.section-feedback {
+  padding: 8rem 0;
+  position: relative;
+}
+
+.section-booking {
+  padding: 10rem;
+  background: $color-gardient-brown-light;
+  // background: linear-gradient(90deg, #c3956a, #a14f03);
+}
+
+@include respond(tab-land) {
+  .section-about {
+    // padding-top: 8rem;
+    padding-bottom: 13rem;
+  }
+  .section-adventure {
+    padding: 16rem 0;
+  }
+}
+@include respond(tab-port) {
+  .section-about {
+    // padding-top: 8rem;
+    padding-bottom: 43rem;
+  }
+  .section-adventure {
+    padding: 16rem 0;
+  }
+  .section-tour {
+    padding-top: 21rem;
+    // overflow-x: hidden;
+  }
+
+  .section-booking {
+    padding: 4rem;
+  }
+}
