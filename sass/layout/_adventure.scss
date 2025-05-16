@@ -1,0 +1,38 @@
+// .section-adventure {
+//   padding-top: 27rem;
+//   padding-bottom: 32rem;
+//   background: linear-gradient(91deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%),
+//     url(/src/img/adventure/about-bg.jfif) center/cover no-repeat;
+//   clip-path: polygon(0 6.17%, 100% 19.6%, 100% 90%, 0 77%);
+//   &__item {
+//     display: block;
+//     text-align: center;
+//     border-radius: 0.5rem;
+//     background: rgba(255, 255, 255, 0.8);
+//     transition: all 0.3s;
+//     backface-visibility: hidden;
+//     &:hover {
+//       // transform: rotate3d(0, 1, 0, 180deg);
+//       // transform: translateY(-5rem);
+//       transform: scale(1.07);
+//     }
+//     &::before {
+//       // display: block;
+//       // content: '';
+//       // background: #34c5d8;
+//       // position: absolute;
+//     }
+//   }
+//   &__img {
+//     // display: inline-block;
+//     margin-bottom: 2.5rem;
+//     margin-top: 2.5rem;
+//   }
+
+//   &__title {
+//   }
+
+//   &__paragraph {
+//     padding: 0rem 2.5rem 0rem 2.5rem;
+//   }
+// }
