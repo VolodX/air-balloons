@@ -7,7 +7,7 @@
       rgba(186, 133, 84, 0) 56%,
       rgba(161, 79, 3, 0) 100%
     ),
-    url(../../src/img/form/form-bg.jpg) center/cover no-repeat;
+    url(../img/form/form-bg.jpg) center/cover no-repeat;
   box-shadow: $box-shadow;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -19,7 +19,7 @@
         rgba(186, 133, 84, 0) 56%,
         rgba(161, 79, 3, 0) 100%
       ),
-      url(../../src/img/form/form-bg.jpg) center/cover no-repeat;
+      url(../img/form/form-bg.jpg) center/cover no-repeat;
   }
   &__form {
     width: 60%;

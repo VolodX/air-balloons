@@ -6,7 +6,7 @@
 .section-adventure {
   padding: 21.5rem 0;
   background: linear-gradient(91deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%),
-    url(../../src/img/adventure/adventure-bg.jpg) center/cover no-repeat;
+    url(../img/adventure/adventure-bg.jpg) center/cover no-repeat;
   transform: skewY(7deg);
   & > * {
     transform: skewY(-7deg);
@@ -14,15 +14,15 @@
 
   @media (min-width: 1440px) {
     background: linear-gradient(91deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%),
-      url(../../src/img/adventure/adventure-bg-lg.jpg) center/cover no-repeat;
+      url(../img/adventure/adventure-bg-lg.jpg) center/cover no-repeat;
   }
   @media (min-width: 901px) and (max-width: 991.98px) {
     background: linear-gradient(91deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%),
-      url(../../src/img/adventure/adventure-bg-md.jpg) center/cover no-repeat;
+      url(../img/adventure/adventure-bg-md.jpg) center/cover no-repeat;
   }
   @media (max-width: 767.98px) {
     background: linear-gradient(91deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%),
-      url(../../src/img/adventure/adventure-bg-xs.jpg) center/cover no-repeat;
+      url(../img/adventure/adventure-bg-xs.jpg) center/cover no-repeat;
   }
 }
 
